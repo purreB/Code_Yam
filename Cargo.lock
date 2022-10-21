@@ -305,6 +305,7 @@ name = "code_yam"
 version = "0.1.0"
 dependencies = [
  "actix-web",
+ "serde",
 ]
 
 [[package]]
@@ -818,6 +819,20 @@ name = "serde"
 version = "1.0.146"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6df50b7a60a0ad48e1b42eb38373eac8ff785d619fb14db917b4e63d5439361f"
+dependencies = [
+ "serde_derive",
+]
+
+[[package]]
+name = "serde_derive"
+version = "1.0.146"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a714fd32ba1d66047ce7d53dabd809e9922d538f9047de13cc4cffca47b36205"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
 
 [[package]]
 name = "serde_json"
